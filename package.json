@@ -1,0 +1,23 @@
+{
+  "name": "web-gastronomia",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/*.html",
+  "browserslist": "> 0.5%, last 10 years versions, not dead",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.1.3"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.14.3"
+  }
+}

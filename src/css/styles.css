@@ -1,0 +1,213 @@
+:root {
+  --color-principal: #623777;
+  --color-accent: #8e0e8e;
+  --color-fons-pagina: #f7efe4;
+  --color-fons-caixa: #fffbf5;
+  --color-fons-fosc: #47032f;
+  --color-text-clar: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-fons-pagina);
+  color: var(--color-principal);
+  font-weight: 400;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main, 
+.container {
+  flex: 1; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: var(--color-fons-pagina);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-vora, #e5e5e5);
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+img.logo {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin-right: 20px;
+}
+
+.menu-navegacio {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-navegacio li {
+  list-style: none;
+}
+
+.menu-navegacio a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-principal);
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.menu-navegacio a:hover {
+  color: var(--color-accent);
+}
+
+.receptes-llistat {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+header {
+  padding: 15px 0 5px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+img.logo {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: var(--color-fons-fosc);
+  color: var(--color-text-clar);
+}
+
+.llistat-receptes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.targeta-recepta {
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--color-fons-caixa);
+}
+
+.columna-targeta {
+  width: 100%;
+}
+
+.columna-targeta-dreta {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titol-recepta {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-principal);
+}
+
+.boto-llegeix-mes {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 6px 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.columna-targeta-imatge {
+  margin: 0;
+}
+
+.columna-targeta-imatge img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 1024px) {
+  main h1 {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  .llistat-receptes {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .targeta-recepta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 420px 1.4fr;
+    column-gap: 40px;
+    align-items: stretch;
+    padding: 24px 28px;
+    box-sizing: border-box;
+  }
+
+  .columna-targeta-dreta {
+    justify-content: center;
+    padding-top: 35px;
+  }
+
+  .titol-recepta {
+    font-size: 20px;
+  }
+
+  .columna-targeta-imatge img {
+    height: 250px;
+    object-fit: cover;
+  }
+}
