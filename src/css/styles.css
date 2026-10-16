@@ -22,12 +22,14 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
-main, 
+main,
 .container {
-  flex: 1; 
+  flex: 1;
   width: 100%;
   box-sizing: border-box;
 }
@@ -35,33 +37,38 @@ main,
 header {
   width: 100%;
   background-color: var(--color-fons-pagina);
-  padding: 20px 0;
+  padding: 15px 0 5px;
   border-bottom: 1px solid var(--color-vora, #e5e5e5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .header-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 15px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }
 
 img.logo {
-  width: 140px;
+  width: 150px;
   height: auto;
   display: block;
-  margin-right: 20px;
 }
 
 .menu-navegacio {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu-navegacio li {
@@ -81,40 +88,73 @@ img.logo {
   color: var(--color-accent);
 }
 
-.receptes-llistat {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-bottom: 40px;
-}
-
 .container {
   width: 100%;
-  max-width: 100%;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
-header {
-  padding: 15px 0 5px;
+.buscador-container {
+  margin: 15px 0;
   width: 100%;
-  text-align: center;
-  display: flex;
 }
 
-img.logo {
-  width: 150px;
-  height: auto;
+.buscador-form {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.buscador-input {
+  padding: 8px;
+  flex: 1;
+  min-width: 180px;
+  border: 1px solid var(--color-principal);
+  background-color: var(--color-fons-caixa);
+  color: var(--color-principal);
+}
+
+.buscador-btn {
+  padding: 8px 12px;
+  background-color: var(--color-principal);
+  color: var(--color-text-clar);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buscador-error {
+  color: red;
+  display: none !important;
+}
+
+main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--color-principal);
+}
+
+main h2 {
+  font-size: 20px;
+  color: var(--color-principal);
+  margin-bottom: 15px;
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
   text-align: center;
   width: 100%;
   padding: 30px 20px;
   background-color: var(--color-fons-fosc);
   color: var(--color-text-clar);
+  box-sizing: border-box;
 }
 
 .llistat-receptes {
@@ -127,9 +167,12 @@ footer {
 
 .targeta-recepta {
   width: 100%;
+  display: flex;
   flex-direction: column;
   box-sizing: border-box;
   background-color: var(--color-fons-caixa);
+  padding: 15px;
+  gap: 15px;
 }
 
 .columna-targeta {
@@ -137,6 +180,7 @@ footer {
 }
 
 .columna-targeta-dreta {
+  display: flex;
   flex-direction: column;
   gap: 8px;
 }
@@ -149,13 +193,14 @@ footer {
 
 .boto-llegeix-mes {
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
   padding: 6px 14px;
   text-decoration: none;
   font-weight: 700;
+  text-align: center;
 }
 
 .columna-targeta-imatge {
@@ -173,12 +218,110 @@ li {
   list-style: none;
 }
 
+.imatge-destacada img,
+.galeria-detall img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.galeria-detall {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.video-detall {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.video-detall iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.bloc-ingredients,
+.bloc-elaboracio {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.llista-ingredients,
+.pas-elaboracio ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.llista-ingredients li,
+.pas-elaboracio li {
+  list-style: disc; /* Punts clàssics per a les llistes */
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.pas-elaboracio {
+  margin-bottom: 20px;
+}
+
+.pas-elaboracio h3 {
+  font-size: 18px;
+  color: var(--color-principal);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.comensals {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-accent);
+}
+
+/*PC*/
 @media (min-width: 1024px) {
-  main h1 {
+  header {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-container {
     max-width: 1000px;
-    margin: 0 auto 30px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  main h1,
+  main h2,
+  main p,
+  main .buscador-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+  }
+
+  main h1 {
+    margin-bottom: 30px;
     font-size: 28px;
+  }
+
+  main h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  main p {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 
   .llistat-receptes {
@@ -188,13 +331,11 @@ li {
   }
 
   .targeta-recepta {
-    width: 100%;
     display: grid;
     grid-template-columns: 420px 1.4fr;
     column-gap: 40px;
     align-items: stretch;
     padding: 24px 28px;
-    box-sizing: border-box;
   }
 
   .columna-targeta-dreta {
@@ -204,10 +345,38 @@ li {
 
   .titol-recepta {
     font-size: 20px;
+    margin-left: 0;
   }
 
   .columna-targeta-imatge img {
     height: 250px;
     object-fit: cover;
+  }
+
+  .imatge-destacada,
+  .galeria-detall,
+  .video-detall {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imatge-destacada img {
+    height: 400px;
+  }
+
+  .galeria-detall {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .galeria-detall img {
+    height: 220px;
+  }
+
+  .llista-ingredients li,
+  .pas-elaboracio li {
+    font-size: 16px;
   }
 }

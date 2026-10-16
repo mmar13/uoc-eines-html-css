@@ -12,12 +12,43 @@
   </head>
   <body>
     <include src="./src/components/header.html"></include>
-    
+
     <div class="container">
       <main>
         <article>
-          <h1>Descobreix les millors receptes de la cuina tradicional mallorquina!</h1>
+          <h1>
+            Descobreix les millors receptes de la cuina tradicional mallorquina.
+          </h1>
           <section>
+            <p>
+              En aquest blog, publico receptes elaborades i explicades passa a
+              passa amb les indicacions de Maria Pons, la meva mare,
+              organitzades segons categories en
+              <a href="categoria.html">receptes salades</a>, i
+              <a href="categoria2.html">receptes dolces</a>
+            </p>
+            <p>
+              Na maria porta tota una vida cuinant receptes mallorquines, que,
+              de la mateixa manera, va aprendre de la meva àvia.
+            </p>
+          </section>
+          <section>
+            <h2>Cercar recepta per paraula clau:</h2>
+            <div class="buscador-container">
+              <form id="search-form" class="buscador-form">
+                <input
+                  type="text"
+                  id="search-input"
+                  class="buscador-input"
+                  placeholder="Cerca una recepta..."
+                  required
+                />
+                <button type="submit" class="buscador-btn">Buscar</button>
+              </form>
+              <p id="search-error" class="buscador-error">
+                No s'ha trobat cap recepta amb aquest nom.
+              </p>
+            </div>
           </section>
         </article>
       </main>
