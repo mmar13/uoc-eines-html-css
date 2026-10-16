@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/*.html",
-  "browserslist": "> 0.5%, last 10 years versions, not dead",
+  "browserslist": "> 0.5%, last 10 years, not dead",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
