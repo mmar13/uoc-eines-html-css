@@ -94,38 +94,37 @@ img.logo {
   box-sizing: border-box;
 }
 
-.buscador-container {
+.missatge-container {
   margin: 15px 0;
   width: 100%;
 }
 
-.buscador-form {
+.missatge-form {
   display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.buscador-input {
-  padding: 8px;
-  flex: 1;
-  min-width: 180px;
+.missatge-input {
+  padding: 10px;
+  width: 100%; 
   border: 1px solid var(--color-principal);
   background-color: var(--color-fons-caixa);
   color: var(--color-principal);
+  box-sizing: border-box;
+  resize: vertical; 
 }
 
-.buscador-btn {
-  padding: 8px 12px;
+.missatge-btn {
+  padding: 8px 16px;
   background-color: var(--color-principal);
   color: var(--color-text-clar);
   border: none;
   cursor: pointer;
   font-weight: 700;
-}
-
-.buscador-error {
-  color: red;
-  display: none !important;
+  align-self: flex-end; 
+  width: auto;         
+  min-width: 100px;   
 }
 
 main h1 {
@@ -263,7 +262,7 @@ li {
 
 .llista-ingredients li,
 .pas-elaboracio li {
-  list-style: disc; /* Punts clàssics per a les llistes */
+  list-style: disc; 
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -302,7 +301,7 @@ li {
   main h1,
   main h2,
   main p,
-  main .buscador-container {
+  main .missatge-container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +348,7 @@ li {
   }
 
   .columna-targeta-imatge img {
-    height: 250px;
+    height: 350px;
     object-fit: cover;
   }
 
