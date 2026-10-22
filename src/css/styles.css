@@ -32,6 +32,9 @@ main,
   flex: 1;
   width: 100%;
   box-sizing: border-box;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 header {
@@ -78,7 +81,7 @@ img.logo {
 .menu-navegacio a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 25px;
   color: var(--color-principal);
   letter-spacing: 0.05em;
   transition: color 0.2s ease;
@@ -86,12 +89,6 @@ img.logo {
 
 .menu-navegacio a:hover {
   color: var(--color-accent);
-}
-
-.container {
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .peticio {
@@ -115,12 +112,12 @@ img.logo {
 
 .missatge-input {
   padding: 10px;
-  width: 100%; 
+  width: 100%;
   border: 1px solid var(--color-principal);
   background-color: var(--color-fons-caixa);
   color: var(--color-principal);
   box-sizing: border-box;
-  resize: vertical; 
+  resize: vertical;
 }
 
 .missatge-btn {
@@ -130,13 +127,12 @@ img.logo {
   border: none;
   cursor: pointer;
   font-weight: 700;
-  align-self: flex-end; 
-  width: auto;         
-  min-width: 100px;   
+  align-self: flex-end;
+  width: auto;
+  min-width: 100px;
 }
 
 main h1 {
-  font-size: 24px;
   margin-bottom: 20px;
   color: var(--color-principal);
 }
@@ -149,7 +145,7 @@ main h2 {
 
 main p {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 footer {
@@ -216,9 +212,10 @@ footer {
 
 .columna-targeta-imatge img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 350px;
   object-fit: cover;
+  object-position: 100% 80%;
+  height: 700px;
 }
 
 li {
@@ -233,6 +230,12 @@ li {
   object-fit: cover;
   margin-bottom: 15px;
   object-position: 100% 80%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.imatge-destacada img {
+  height: 500px;
 }
 
 .galeria-detall {
@@ -271,7 +274,7 @@ li {
 
 .llista-ingredients li,
 .pas-elaboracio li {
-  list-style: disc; 
+  list-style: disc;
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -305,6 +308,10 @@ li {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+  }
+
+  main {
+    width: 100%;
   }
 
   main h1,
@@ -356,12 +363,6 @@ li {
     margin-left: 0;
   }
 
-  .columna-targeta-imatge img {
-    height: 350px;
-    object-fit: cover;
-    object-position: 100% 80%;
-  }
-
   .imatge-destacada,
   .galeria-detall,
   .video-detall {
@@ -393,5 +394,9 @@ li {
     max-width: 1000px;
     margin: 50px auto;
     padding: 30px;
+  }
+
+  .menu-navegacio a {
+    font-size: 14px;
   }
 }
