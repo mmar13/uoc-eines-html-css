@@ -94,6 +94,14 @@ img.logo {
   box-sizing: border-box;
 }
 
+.peticio {
+  margin: 50px 0;
+  padding: 20px;
+  background-color: var(--color-fons-caixa);
+  border: 1px solid var(--color-principal);
+  border-radius: 5px;
+}
+
 .missatge-container {
   margin: 15px 0;
   width: 100%;
@@ -224,6 +232,7 @@ li {
   display: block;
   object-fit: cover;
   margin-bottom: 15px;
+  object-position: 100% 80%;
 }
 
 .galeria-detall {
@@ -350,6 +359,7 @@ li {
   .columna-targeta-imatge img {
     height: 350px;
     object-fit: cover;
+    object-position: 100% 80%;
   }
 
   .imatge-destacada,
@@ -377,5 +387,11 @@ li {
   .llista-ingredients li,
   .pas-elaboracio li {
     font-size: 16px;
+  }
+
+  .peticio {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
   }
 }
