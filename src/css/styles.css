@@ -5,6 +5,7 @@
   --color-fons-caixa: #fffbf5;
   --color-fons-fosc: #47032f;
   --color-text-clar: #ffffff;
+  --color-hover: #c699dc;
 }
 
 html,
@@ -57,6 +58,7 @@ header {
   align-items: center;
   gap: 15px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 img.logo {
@@ -67,7 +69,7 @@ img.logo {
 
 .menu-navegacio {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -88,7 +90,14 @@ img.logo {
 }
 
 .menu-navegacio a:hover {
-  color: var(--color-accent);
+  color: var(--color-hover);
+}
+
+.menu-navegacio li:not(:last-child):after {
+  content: "·";
+  margin-left: 20px;
+  color: var(--color-principal);
+  opacity: 0.5;
 }
 
 .peticio {
@@ -200,7 +209,7 @@ footer {
   letter-spacing: 0.08em;
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
-  padding: 6px 14px;
+  padding: 10px 14px;
   text-decoration: none;
   font-weight: 700;
   text-align: center;
@@ -355,7 +364,6 @@ li {
 
   .columna-targeta-dreta {
     justify-content: center;
-    padding-top: 35px;
   }
 
   .titol-recepta {
@@ -374,6 +382,10 @@ li {
   .imatge-destacada img {
     height: 400px;
   }
+
+  .columna-targeta-imatge img {
+  height: 400px;
+}
 
   .galeria-detall {
     display: grid;
@@ -394,6 +406,13 @@ li {
     max-width: 1000px;
     margin: 50px auto;
     padding: 30px;
+  }
+
+  .menu-navegacio li:not(:last-child):after {
+    content: "|";
+    margin-left: 20px;
+    color: var(--color-principal);
+    opacity: 0.5;
   }
 
   .menu-navegacio a {
