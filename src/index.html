@@ -13,12 +13,13 @@
     <include src="./src/components/header.html"></include>
 
     <div class="container">
-      <main>
+      <main id="main-content">
         <article>
           <h1>
             Descobreix les millors receptes de la cuina tradicional mallorquina.
           </h1>
           <section>
+            <h2>Sobre aquest blog</h2>
             <p>
               En aquest blog, publico receptes elaborades i explicades passa a
               passa amb les indicacions de Maria Pons, la meva mare,
@@ -32,7 +33,10 @@
             </p>
           </section>
           <section class="peticio">
-            <h2>Vols fer alguna petició d'una recepta mallorquina? Pots mandar-mos un missatge amb la teva suggerència:</h2>
+            <h2>
+              Vols fer alguna petició d'una recepta mallorquina? Pots mandar-mos
+              un missatge amb la teva suggerència:
+            </h2>
             <div class="missatge-container">
               <form id="message-form" class="missatge-form">
                 <textarea
@@ -40,6 +44,7 @@
                   class="missatge-input"
                   placeholder="Escriu el teu missatge..."
                   required
+                  aria-label="Escriu el teu missatge"
                 ></textarea>
                 <button type="submit" class="missatge-btn">Enviar</button>
               </form>

@@ -169,6 +169,12 @@ footer {
   box-sizing: border-box;
 }
 
+footer a{
+  color: var(--color-text-clar);
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .llistat-receptes {
   display: flex;
   flex-direction: column;
@@ -305,6 +311,21 @@ li {
   color: var(--color-accent);
 }
 
+.saltar-navegacio {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--color-principal);
+  color: var(--color-text-clar);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.saltar-navegacio:focus {
+  top: 0;
+}
+
 /*PC*/
 @media (min-width: 1024px) {
   header {
@@ -384,8 +405,8 @@ li {
   }
 
   .columna-targeta-imatge img {
-  height: 400px;
-}
+    height: 400px;
+  }
 
   .galeria-detall {
     display: grid;
