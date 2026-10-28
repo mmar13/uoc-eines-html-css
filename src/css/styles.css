@@ -83,7 +83,7 @@ img.logo {
 .menu-navegacio a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   color: var(--color-principal);
   letter-spacing: 0.05em;
   transition: color 0.2s ease;
@@ -139,22 +139,33 @@ img.logo {
   align-self: flex-end;
   width: auto;
   min-width: 100px;
+  font-size: 20px;
 }
 
 main h1 {
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 30px;
   color: var(--color-principal);
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.titol-recepta-detall {
+  margin-left: 0;
 }
 
 main h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: var(--color-principal);
   margin-bottom: 15px;
 }
 
 main p {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 footer {
@@ -169,7 +180,7 @@ footer {
   box-sizing: border-box;
 }
 
-footer a{
+footer a {
   color: var(--color-text-clar);
   text-decoration: none;
   font-weight: 700;
@@ -177,10 +188,11 @@ footer a{
 
 .llistat-receptes {
   display: flex;
+  margin: 0 auto 60px auto;
   flex-direction: column;
-  gap: 25px;
-  margin-bottom: 40px;
-  width: 100%;
+  gap: 100px;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .targeta-recepta {
@@ -189,7 +201,7 @@ footer a{
   flex-direction: column;
   box-sizing: border-box;
   background-color: var(--color-fons-caixa);
-  padding: 15px;
+  padding: 25px;
   gap: 15px;
 }
 
@@ -204,14 +216,14 @@ footer a{
 }
 
 .titol-recepta {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--color-principal);
 }
 
 .boto-llegeix-mes {
   display: inline-block;
-  font-size: 12px;
+  font-size: 23px;
   letter-spacing: 0.08em;
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
@@ -291,7 +303,7 @@ li {
 .pas-elaboracio li {
   list-style: disc;
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .pas-elaboracio {
@@ -299,14 +311,14 @@ li {
 }
 
 .pas-elaboracio h3 {
-  font-size: 18px;
+  font-size: 25px;
   color: var(--color-principal);
   margin-bottom: 8px;
   font-weight: 700;
 }
 
 .comensals {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   color: var(--color-accent);
 }
@@ -324,6 +336,10 @@ li {
 
 .saltar-navegacio:focus {
   top: 0;
+}
+
+textarea {
+  font-size: 18px;
 }
 
 /*PC*/
@@ -356,23 +372,25 @@ li {
 
   main h1 {
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 24px;
+    width: 100%;
   }
 
   main h2 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   main p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .llistat-receptes {
     max-width: 1000px;
     margin: 0 auto;
     gap: 30px;
+    width: 100%;
   }
 
   .targeta-recepta {
@@ -390,6 +408,15 @@ li {
   .titol-recepta {
     font-size: 20px;
     margin-left: 0;
+  }
+
+  .titol-recepta-detall {
+    margin-left: auto;
+  }
+
+  .boto-llegeix-mes {
+    font-size: 16px;
+    padding: 8px 12px;
   }
 
   .imatge-destacada,
@@ -420,7 +447,15 @@ li {
 
   .llista-ingredients li,
   .pas-elaboracio li {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .pas-elaboracio h3 {
+    font-size: 20px;
+  }
+
+  .comensals {
+    font-size: 14px;
   }
 
   .peticio {
@@ -437,6 +472,14 @@ li {
   }
 
   .menu-navegacio a {
+    font-size: 13px;
+  }
+
+  .missatge-btn {
+    font-size: 16px;
+  }
+
+  textarea {
     font-size: 14px;
   }
 }
