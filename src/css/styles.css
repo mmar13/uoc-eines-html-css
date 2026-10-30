@@ -153,6 +153,10 @@ main h1 {
   box-sizing: border-box;
 }
 
+.titol-index {
+  width: 100%;
+}
+
 .titol-recepta-detall {
   margin-left: 0;
 }
@@ -193,6 +197,12 @@ footer a {
   gap: 100px;
   width: 90%;
   max-width: 1000px;
+  margin-top: 50px;
+}
+
+.recepta-detall {
+  width: 90%;
+  margin: auto
 }
 
 .targeta-recepta {
