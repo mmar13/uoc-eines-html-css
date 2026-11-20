@@ -18,7 +18,7 @@
       content="Recepta detallada de frit de mè mallorquí."
     />
   </head>
-  
+
   <body>
     <include src="./src/components/header.html"></include>
     <div class="container">
@@ -27,7 +27,11 @@
           <h1 class="titol-recepta-detall">Frit mallorquí (de mè)</h1>
 
           <section class="imatge-destacada">
-            <img src="./img/frit.jpeg" alt="Frit mallorquí de mè" />
+            <picture>
+              <source srcset="./img/frit.jpeg?as=avif" type="image/avif" />
+              <source srcset="./img/frit.jpeg?as=webp" type="image/webp" />
+              <img src="./img/frit.jpeg" alt="Frit mallorquí de mè" />
+            </picture>
           </section>
           <section class="bloc-ingredients">
             <h2>
@@ -127,22 +131,52 @@
 
           <section class="galeria-detall">
             <a href="./img/pas1_frit.jpg">
-              <img
-                src="./img/pas1_frit_pet.jpg"
-                alt="Pas 1: Preparar patates i carn"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas1_frit_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas1_frit_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas1_frit_pet.jpg"
+                  alt="Pas 1: Preparar patates i carn"
+                />
+              </picture>
             </a>
             <a href="./img/pas2_frit.jpg">
-              <img
-                src="./img/pas2_frit_pet.jpg"
-                alt="Pas 2: Cuinar la carn a la greixonera"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas2_frit_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas2_frit_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas2_frit_pet.jpg"
+                  alt="Pas 2: Cuinar la carn a la greixonera"
+                />
+              </picture>
             </a>
             <a href="./img/pas3_frit.jpg">
-              <img
-                src="./img/pas3_frit_pet.jpg"
-                alt="Pas 3: Resultat final integrat"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas3_frit_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas3_frit_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas3_frit_pet.jpg"
+                  alt="Pas 3: Resultat final integrat"
+                />
+              </picture>
             </a>
           </section>
 

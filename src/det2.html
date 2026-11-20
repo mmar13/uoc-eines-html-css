@@ -16,7 +16,7 @@
     />
     <script type="module" src="./app.js"></script>
   </head>
-  
+
   <body>
     <include src="./src/components/header.html"></include>s
     <div class="container">
@@ -25,10 +25,11 @@
           <h1 class="titol-recepta-detall">Panades de mè</h1>
 
           <section class="imatge-destacada">
-            <img
-              src="./img/panada.jpeg"
-              alt="Panades mallorquines tradicionals"
-            />
+            <picture>
+              <source srcset="./img/panada.jpeg?as=avif" type="image/avif" />
+              <source srcset="./img/panada.jpeg?as=webp" type="image/webp" />
+              <img src="./img/panada.jpeg" alt="Panades de mè" />
+            </picture>
           </section>
           <section class="bloc-ingredients">
             <h2>
@@ -132,19 +133,49 @@
 
           <section class="galeria-detall">
             <a href="./img/pas1_pan.jpg">
-              <img
-                src="./img/pas1_pan_pet.jpg"
-                alt="Pas 1: Preparar es farcit"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas1_pan_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas1_pan_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas1_pan_pet.jpg"
+                  alt="Pas 1: Preparar es farcit"
+                />
+              </picture>
             </a>
             <a href="./img/pas2_pan.jpg">
-              <img src="./img/pas2_pan_pet.jpg" alt="Pas 2: Fer sa massa" />
+              <picture>
+                <source
+                  srcset="./img/pas2_pan_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas2_pan_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img src="./img/pas2_pan_pet.jpg" alt="Pas 2: Fer sa massa" />
+              </picture>
             </a>
             <a href="./img/pas3_pan.jpg">
-              <img
-                src="./img/pas3_pan_pet.jpg"
-                alt="Pas 3: Muntar i enfornar ses panades"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas3_pan_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas3_pan_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas3_pan_pet.jpg"
+                  alt="Pas 3: Muntar i enfornar ses panades"
+                />
+              </picture>
             </a>
           </section>
 

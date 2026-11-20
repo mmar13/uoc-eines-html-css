@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./app.js"></script>
   </head>
-  
+
   <body>
     <include src="./src/components/header.html"></include>
     <div class="container">
@@ -23,10 +23,11 @@
         <article class="recepta-detall">
           <h1 class="titol-recepta-detall">Robiols mallorquins</h1>
           <section class="imatge-destacada">
-            <img
-              src="./img/robiols.jpeg"
-              alt="Robiols mallorquins tradicionals"
-            />
+            <picture>
+              <source srcset="./img/robiols.jpeg?as=avif" type="image/avif" />
+              <source srcset="./img/robiols.jpeg?as=webp" type="image/webp" />
+              <img src="./img/robiols.jpeg" alt="Robiols" />
+            </picture>
           </section>
           <section class="bloc-ingredients">
             <h2>
@@ -122,22 +123,52 @@
 
           <section class="galeria-detall">
             <a href="./img/pas1_rob.jpg">
-              <img
-                src="./img/pas1_rob_pet.jpg"
-                alt="Pas 1: Preparar la massa des robiols"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas1_rob_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas1_rob_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas1_rob_pet.jpg"
+                  alt="Pas 1: Preparar la massa des robiols"
+                />
+              </picture>
             </a>
             <a href="./img/pas2_rob.jpg">
-              <img
-                src="./img/pas2_rob_pet.jpg"
-                alt="Pas 2: Fer bolletes i estirar-les amb es rodell"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas2_rob_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas2_rob_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas2_rob_pet.jpg"
+                  alt="Pas 2: Fer bolletes i estirar-les amb es rodell"
+                />
+              </picture>
             </a>
             <a href="./img/pas3_rob.jpg">
-              <img
-                src="./img/pas3_rob_pet.jpg"
-                alt="Pas 3: Robiols preparats per enfornar"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas3_rob_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas3_rob_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas3_rob_pet.jpg"
+                  alt="Pas 3: Robiols preparats per enfornar"
+                />
+              </picture>
             </a>
           </section>
 

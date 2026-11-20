@@ -15,18 +15,27 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./app.js"></script>
   </head>
-  
+
   <body>
     <include src="./src/components/header.html"></include>
     <div class="container">
       <main id="main-content">
         <article class="recepta-detall">
-          <h1 class="titol-recepta-detall">Albergínies farcides a la mallorquina</h1>
+          <h1 class="titol-recepta-detall">
+            Albergínies farcides a la mallorquina
+          </h1>
           <section class="imatge-destacada">
-            <img
-              src="./img/alberginies.jpeg"
-              alt="Albergínies farcides tradicionals"
-            />
+            <picture>
+              <source
+                srcset="./img/alberginies.jpeg?as=avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/alberginies.jpeg?as=webp"
+                type="image/webp"
+              />
+              <img src="./img/alberginies.jpeg" alt="Albergínies rellenes" />
+            </picture>
           </section>
           <section class="bloc-ingredients">
             <h2>
@@ -131,25 +140,54 @@
 
           <section class="galeria-detall">
             <a href="./img/pas1_alb.jpg">
-              <img
-                src="./img/pas1_alb_pet.jpg"
-                alt="Pas 1: Buidar les albergínies"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas1_alb_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas1_alb_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas1_alb_pet.jpg"
+                  alt="Pas 1: Buidar les albergínies"
+                />
+              </picture>
             </a>
             <a href="./img/pas2_alb.jpg">
-              <img
-                src="./img/pas2_alb_pet.jpg"
-                alt="Pas 2: Preparar el farcit"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas2_alb_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas2_alb_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas2_alb_pet.jpg"
+                  alt="Pas 2: Preparar el farcit"
+                />
+              </picture>
             </a>
             <a href="./img/pas3_alb.jpg">
-              <img
-                src="./img/pas3_alb_pet.jpg"
-                alt="Pas 3: Resultat final enfornat"
-              />
+              <picture>
+                <source
+                  srcset="./img/pas3_alb_pet.jpg?as=avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/pas3_alb_pet.jpg?as=webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/pas3_alb_pet.jpg"
+                  alt="Pas 3: Resultat final enfornat"
+                />
+              </picture>
             </a>
           </section>
-
           <section class="video-detall">
             <h2>Enllaç a una altra versió de la recepta pas a pas</h2>
             <iframe
@@ -167,7 +205,7 @@
                 picture-in-picture;
               "
               allowfullscreen
-            >
+            ></iframe>
           </section>
         </article>
       </main>
