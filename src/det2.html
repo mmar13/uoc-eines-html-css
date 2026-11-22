@@ -23,11 +23,26 @@
       <main id="main-content">
         <article class="recepta-detall">
           <h1 class="titol-recepta-detall">Panades de mè</h1>
-
           <section class="imatge-destacada">
             <picture>
-              <source srcset="./img/panada.jpeg?as=webp" type="image/webp" />
-              <img src="./img/panada.jpeg" alt="Panades de mè" />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/panades-pc.jpg?as=webp&width=1000 1x,
+                  ./img/panades-pc.jpg?as=webp&width=1600 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/panades-pc.jpg?width=1000"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./img/panada.jpeg?as=webp&width=800"
+                type="image/webp"
+              />
+              <img src="./img/panada.jpeg?width=800" alt="Panades de mè" />
             </picture>
           </section>
           <section class="bloc-ingredients">
@@ -134,11 +149,23 @@
             <a href="./img/pas1_pan.jpg">
               <picture>
                 <source
-                  srcset="./img/pas1_pan_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas1_pan_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas1_pan_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas1_pan_pet.jpg?width=320 320w,
+                    ./img/pas1_pan_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas1_pan_pet.jpg"
+                  src="./img/pas1_pan_pet.jpg?width=640"
                   alt="Pas 1: Preparar es farcit"
                 />
               </picture>
@@ -146,28 +173,47 @@
             <a href="./img/pas2_pan.jpg">
               <picture>
                 <source
-                  srcset="./img/pas2_pan_pet.jpg?as=avif"
-                  type="image/avif"
+                  type="image/webp"
+                  srcset="
+                    ./img/pas2_pan_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas2_pan_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <source
-                  srcset="./img/pas2_pan_pet.jpg?as=webp"
-                  type="image/webp"
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas2_pan_pet.jpg?width=320 320w,
+                    ./img/pas2_pan_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
-                <img src="./img/pas2_pan_pet.jpg" alt="Pas 2: Fer sa massa" />
+                <img
+                  src="./img/pas2_pan_pet.jpg?width=640"
+                  alt="Pas 2: Fer sa massa"
+                />
               </picture>
             </a>
             <a href="./img/pas3_pan.jpg">
               <picture>
                 <source
-                  srcset="./img/pas3_pan_pet.jpg?as=avif"
-                  type="image/avif"
+                  type="image/webp"
+                  srcset="
+                    ./img/pas3_pan_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas3_pan_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <source
-                  srcset="./img/pas3_pan_pet.jpg?as=webp"
-                  type="image/webp"
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas3_pan_pet.jpg?width=320 320w,
+                    ./img/pas3_pan_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas3_pan_pet.jpg"
+                  src="./img/pas3_pan_pet.jpg?width=640"
                   alt="Pas 3: Muntar i enfornar ses panades"
                 />
               </picture>

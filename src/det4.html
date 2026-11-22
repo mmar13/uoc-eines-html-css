@@ -24,8 +24,24 @@
           <h1 class="titol-recepta-detall">Robiols mallorquins</h1>
           <section class="imatge-destacada">
             <picture>
-              <source srcset="./img/robiols.jpeg?as=webp" type="image/webp" />
-              <img src="./img/robiols.jpeg" alt="Robiols" />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/robiols-pc.jpg?as=webp&width=1000 1x,
+                  ./img/robiols-pc.jpg?as=webp&width=1600 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/robiols-pc.jpg?width=1000"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./img/robiols.jpeg?as=webp&width=800"
+                type="image/webp"
+              />
+              <img src="./img/robiols.jpeg?width=800" alt="Robiols" />
             </picture>
           </section>
           <section class="bloc-ingredients">
@@ -124,11 +140,23 @@
             <a href="./img/pas1_rob.jpg">
               <picture>
                 <source
-                  srcset="./img/pas1_rob_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas1_rob_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas1_rob_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas1_rob_pet.jpg?width=320 320w,
+                    ./img/pas1_rob_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas1_rob_pet.jpg"
+                  src="./img/pas1_rob_pet.jpg?width=640"
                   alt="Pas 1: Preparar la massa des robiols"
                 />
               </picture>
@@ -136,11 +164,23 @@
             <a href="./img/pas2_rob.jpg">
               <picture>
                 <source
-                  srcset="./img/pas2_rob_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas2_rob_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas2_rob_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas2_rob_pet.jpg?width=320 320w,
+                    ./img/pas2_rob_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas2_rob_pet.jpg"
+                  src="./img/pas2_rob_pet.jpg?width=640"
                   alt="Pas 2: Fer bolletes i estirar-les amb es rodell"
                 />
               </picture>
@@ -148,11 +188,23 @@
             <a href="./img/pas3_rob.jpg">
               <picture>
                 <source
-                  srcset="./img/pas3_rob_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas3_rob_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas3_rob_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas3_rob_pet.jpg?width=320 320w,
+                    ./img/pas3_rob_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas3_rob_pet.jpg"
+                  src="./img/pas3_rob_pet.jpg?width=640"
                   alt="Pas 3: Robiols preparats per enfornar"
                 />
               </picture>

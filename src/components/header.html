@@ -5,8 +5,28 @@
   <div class="header-container">
     <a href="index.html">
       <picture>
-        <source srcset="./img/logo.png?as=webp" type="image/webp" />
-        <img class="logo" src="./img/logo.png" alt="Logo del blog" />
+        <source
+          type="image/webp"
+          srcset="
+            ./img/logo.png?as=webp&width=150,
+            ./img/logo.png?as=webp&width=225 1.5x,
+            ./img/logo.png?as=webp&width=300 2x
+          "
+        />
+        <source
+          type="image/png"
+          srcset="
+            ./img/logo.png?width=150,
+            ./img/logo.png?width=225 1.5x,
+            ./img/logo.png?width=300 2x
+          "
+        />
+        <img
+          class="logo"
+          src="./img/logo.png?width=150"
+          alt="Cuina amb Maria, inici"
+          width="150"
+        />
       </picture>
     </a>
     <nav>

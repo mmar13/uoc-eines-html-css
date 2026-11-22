@@ -22,8 +22,23 @@
         <section class="targeta-recepta">
           <figure class="columna-targeta columna-targeta-imatge">
             <picture>
-              <source srcset="./img/frit.jpeg?as=webp" type="image/webp" />
-              <img src="./img/frit.jpeg" alt="Frit mallorquí de mè" />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/frit.jpeg?as=webp&width=420 420w,
+                  ./img/frit.jpeg?as=webp&width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+              <source
+                type="image/jpeg"
+                srcset="
+                  ./img/frit.jpeg?width=420 420w,
+                  ./img/frit.jpeg?width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+              <img src="./img/frit.jpeg?width=840" alt="Frit mallorquí de mè" />
             </picture>
           </figure>
           <div class="columna-targeta columna-targeta-dreta">
@@ -43,8 +58,23 @@
         <section class="targeta-recepta">
           <figure class="columna-targeta columna-targeta-imatge">
             <picture>
-              <source srcset="./img/panada.jpeg?as=webp" type="image/webp" />
-              <img src="./img/panada.jpeg" alt="Panades de mè" />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/panada.jpeg?as=webp&width=420 420w,
+                  ./img/panada.jpeg?as=webp&width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+              <source
+                type="image/jpeg"
+                srcset="
+                  ./img/panada.jpeg?width=420 420w,
+                  ./img/panada.jpeg?width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+              <img src="./img/panada.jpeg?width=840" alt="Panades de mè" />
             </picture>
           </figure>
           <div class="columna-targeta columna-targeta-dreta">
@@ -66,10 +96,25 @@
           <figure class="columna-targeta columna-targeta-imatge">
             <picture>
               <source
-                srcset="./img/alberginies.jpeg?as=webp"
                 type="image/webp"
+                srcset="
+                  ./img/alberginies.jpeg?as=webp&width=420 420w,
+                  ./img/alberginies.jpeg?as=webp&width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
               />
-              <img src="./img/alberginies.jpeg" alt="Albergínies rellenes" />
+              <source
+                type="image/jpeg"
+                srcset="
+                  ./img/alberginies.jpeg?width=420 420w,
+                  ./img/alberginies.jpeg?width=840 840w
+                "
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+              <img
+                src="./img/alberginies.jpeg?width=840"
+                alt="Albergínies rellenes"
+              />
             </picture>
           </figure>
           <div class="columna-targeta columna-targeta-dreta">

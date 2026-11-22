@@ -202,7 +202,7 @@ footer a {
 
 .recepta-detall {
   width: 90%;
-  margin: auto
+  margin: auto;
 }
 
 .targeta-recepta {
@@ -262,17 +262,15 @@ li {
 .imatge-destacada img,
 .galeria-detall img {
   width: 100%;
-  height: auto;
+  height: 500px;
   display: block;
   object-fit: cover;
-  margin-bottom: 15px;
-  object-position: 100% 80%;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
 .imatge-destacada img {
-  height: 500px;
+  object-position: 100% 80%;
 }
 
 .galeria-detall {

@@ -25,11 +25,27 @@
       <main id="main-content">
         <article class="recepta-detall">
           <h1 class="titol-recepta-detall">Frit mallorquí (de mè)</h1>
-
           <section class="imatge-destacada">
             <picture>
-              <source srcset="./img/frit.jpeg?as=webp" type="image/webp" />
-              <img src="./img/frit.jpeg" alt="Frit mallorquí de mè" />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/frit-pc.jpg?as=webp&width=1000 1x,
+                  ./img/frit-pc.jpg?as=webp&width=1600 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/frit-pc.jpg?width=1000"
+                type="image/jpeg"
+              />
+
+              <source
+                srcset="./img/frit.jpeg?as=webp&width=800"
+                type="image/webp"
+              />
+              <img src="./img/frit.jpeg?width=800" alt="Frit mallorquí de mè" />
             </picture>
           </section>
           <section class="bloc-ingredients">
@@ -132,11 +148,23 @@
             <a href="./img/pas1_frit.jpg">
               <picture>
                 <source
-                  srcset="./img/pas1_frit_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas1_frit_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas1_frit_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas1_frit_pet.jpg?width=320 320w,
+                    ./img/pas1_frit_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas1_frit_pet.jpg"
+                  src="./img/pas1_frit_pet.jpg?width=640"
                   alt="Pas 1: Preparar patates i carn"
                 />
               </picture>
@@ -144,11 +172,23 @@
             <a href="./img/pas2_frit.jpg">
               <picture>
                 <source
-                  srcset="./img/pas2_frit_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas2_frit_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas2_frit_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas2_frit_pet.jpg?width=320 320w,
+                    ./img/pas2_frit_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas2_frit_pet.jpg"
+                  src="./img/pas2_frit_pet.jpg?width=640"
                   alt="Pas 2: Cuinar la carn a la greixonera"
                 />
               </picture>
@@ -156,11 +196,23 @@
             <a href="./img/pas3_frit.jpg">
               <picture>
                 <source
-                  srcset="./img/pas3_frit_pet.jpg?as=webp"
                   type="image/webp"
+                  srcset="
+                    ./img/pas3_frit_pet.jpg?as=webp&width=320 320w,
+                    ./img/pas3_frit_pet.jpg?as=webp&width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    ./img/pas3_frit_pet.jpg?width=320 320w,
+                    ./img/pas3_frit_pet.jpg?width=640 640w
+                  "
+                  sizes="(min-width: 1024px) 320px, 90vw"
                 />
                 <img
-                  src="./img/pas3_frit_pet.jpg"
+                  src="./img/pas3_frit_pet.jpg?width=640"
                   alt="Pas 3: Resultat final integrat"
                 />
               </picture>
