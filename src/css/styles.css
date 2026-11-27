@@ -350,6 +350,36 @@ textarea {
   font-size: 18px;
 }
 
+.icona-olla {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto 40px auto; 
+  color: var(--color-principal);
+}
+
+.icona-olla .vapor {
+  animation: pujarVapor 2.2s ease-in-out infinite;
+}
+
+.icona-olla .vapor-2 {
+  animation-delay: 1.1s;
+}
+
+@keyframes pujarVapor {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+
 /*PC*/
 @media (min-width: 1024px) {
   header {
@@ -391,7 +421,7 @@ textarea {
 
   main p {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .llistat-receptes {
@@ -455,7 +485,7 @@ textarea {
 
   .llista-ingredients li,
   .pas-elaboracio li {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .pas-elaboracio h3 {
@@ -463,7 +493,7 @@ textarea {
   }
 
   .comensals {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .peticio {
@@ -480,7 +510,7 @@ textarea {
   }
 
   .menu-navegacio a {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .missatge-btn {
@@ -488,6 +518,6 @@ textarea {
   }
 
   textarea {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
